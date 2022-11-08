@@ -1,0 +1,253 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap");
+@font-face {
+  font-family: "Beauty-mountains";
+  src: url("/fonts/BeautyMountainsPersonalUse-od7z.ttf");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat";
+}
+body {
+  background-color: #f0f0f0;
+}
+section:nth-of-type(2n) {
+  background-color: #f0f0f0;
+}
+section:nth-of-type(2n + 1) {
+  background-color: #ffffff;
+}
+img {
+  max-width: 100%;
+}
+h2 {
+  font-size: 2.25rem;
+}
+#wrapper {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+.row {
+  display: flex;
+  justify-content: space-between;
+}
+.col {
+  display: flex;
+  flex-direction: column;
+}
+header {
+  grid-column: 1/-1;
+  height: 100vh;
+  color: white;
+  text-align: center;
+  background: url("/Images/Header/desktop\ bg.png") top center / cover;
+}
+header h1 {
+  padding: 6rem 0 1.5rem 0;
+  font-size: 3rem;
+  margin: 0 10%;
+}
+header p {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+.cta-btn {
+  background-color: white;
+  color: black;
+  padding: 1rem 2rem;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.5rem;
+  transition: color 0.25s ease, background-color 0.25s ease;
+}
+header .cta-btn:hover {
+  background-color: black;
+  color: white;
+  transition: color 0.25s ease, background-color 0.25s ease;
+}
+.logo {
+  font-family: "Beauty-mountains";
+  color: #7de5ed;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  font-size: 7rem;
+}
+.logo:hover {
+  color: white;
+  transition: color 0.25s ease, background-color 0.25s ease;
+}
+#al_rihla {
+  grid-column: 1/-1;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  padding: 4% 3%;
+}
+.al_rihla_cta {
+  text-align: center;
+  justify-content: center;
+}
+.al_rihla_cta h2 {
+  margin-bottom: 0.5rem;
+}
+#al_rihla_info {
+  align-items: center;
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+#al_rihla_info p:first-of-type {
+  display: block;
+  background-color: #7de5ed;
+  border-radius: 20px;
+  padding: 0.25rem 0.5rem;
+  font-weight: 600;
+  width: fit-content;
+  margin: 0 auto;
+}
+#al_rihla_info p:nth-of-type(2) {
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+#al_rihla_info div {
+  margin: 0.75rem 0;
+}
+#get-ticket {
+  grid-column: 1/-1;
+  padding: 3rem 0 5rem 0;
+  text-align: center;
+}
+#get-ticket h2 {
+  margin-bottom: 1rem;
+}
+#get-ticket p {
+  margin-bottom: 2rem;
+}
+#get-ticket a:hover {
+  background-color: black;
+  color: white;
+  transition: color 0.25s ease, background-color 0.25s ease;
+}
+#visit-with-us {
+  grid-column: 1/-1;
+  text-align: center;
+  padding: 2rem 0 3rem 0;
+}
+#visit-with-us h2 {
+  margin: 0 0 1.5rem 0;
+}
+#cards {
+  display: grid;
+  margin: 0 3%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  justify-items: center;
+  gap: 15px;
+}
+.card {
+  border: 3px solid #7de5ed;
+  background-color: #f0f0f0;
+  transition: background-color, 0.3s ease;
+  overflow: hidden;
+}
+.card:hover {
+  background-color: #dfdfdf;
+  transition: background-color, 0.3s ease;
+}
+.card div {
+  background-size: cover;
+  height: 180px;
+  width: 100%;
+  margin-bottom: 15px;
+  transition: transform 0.2s ease;
+}
+.card div:hover {
+  transition: transform 0.2s ease;
+  transform: scale(1.1);
+}
+.card p {
+  padding: 0 2rem 1.25rem 1.25rem;
+}
+.card:first-of-type div {
+  background: url("/Images/Visit with us/index.jpg");
+  background-size: cover;
+}
+.card:nth-of-type(2) div {
+  background: url("/Images/Visit with us/index2.jpg");
+  background-size: cover;
+}
+.card:nth-of-type(3) div {
+  background: url("/Images/Visit with us/index3.jpg");
+  background-size: cover;
+}
+.card:nth-of-type(4) div {
+  background: url("/Images/Visit with us/index4.jpg");
+  background-size: cover;
+}
+.card h3 {
+  color: black;
+  margin: 0 0 1rem 0;
+}
+.card p {
+  text-align: center;
+}
+#sponsors {
+  grid-column: 1/-1;
+  text-align: center;
+  padding: 2.25rem 0;
+}
+#sponsors h2 {
+  margin-bottom: 0.5rem;
+}
+.sponsors-imgs {
+  width: 80%;
+  gap: 10px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+}
+.sponsors-imgs img {
+  object-fit: cover;
+}
+footer {
+  grid-column: 1/-1;
+  background-color: #fff4f4a2;
+  padding: 1rem 3%;
+  align-items: center;
+  gap: 1rem;
+  font-size: 0.75rem;
+}
+footer ul {
+  list-style: none;
+  font-weight: 500;
+  text-align: center;
+}
+.footer-content {
+  width: 50%;
+}
+.footer-content a {
+  text-decoration: none;
+  color: black;
+  transition: color 0.25s ease;
+}
+.footer-content a:hover {
+  font-size: 1.1rem;
+  color: #7de5ed;
+  transition: color 0.25s ease, font-size 0.25s ease;
+}
+footer img {
+  width: 30%;
+  margin: 0 auto;
+}
+
+@media (max-width: 600px) {
+  html {
+    font-size: 14px;
+  }
+}
+@media (max-width: 450px) {
+  html {
+    font-size: 11px;
+  }
+}
